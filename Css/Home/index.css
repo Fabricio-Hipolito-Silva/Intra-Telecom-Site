@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF
+}
+
+main section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+}
+
+.acessibilidade{
+    display: flex;
+    padding: 20px;
+    align-items: right;
+}
+
+header{
+background-color: #212021;
+/* background: linear-gradient(88deg,rgba(33, 32, 33, 1) 0%, rgba(77, 58, 138, 1) 83%); */
+}
+
+.sessao_um{
+    background-color: #212021;
+}
+
+.sessao_dois{
+    background-color: #4d3a8a;
+}
+
+.mulher_celular_1{
+    height: 650px;
+    width: auto;
+}
+
+.logo{
+    height: 90px;
+    width: auto;
+}
+
+.Logo_Slogan {
+    background-color:  #d9d6f0; /* branco translúcido */
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.Logo_Slogan img {
+    height: 60px;
+    margin-right: 10px;
+}
