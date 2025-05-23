@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Poppins_Light';
+  src: url('../../Fonts/Poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins_Regular';
+  src: url('../../Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #FFFFFF
+    font-family: 'Poppins_Light';
+}
+
+img {
+    width: 200px;
+    height: auto;
 }
 
 main section {
@@ -13,45 +28,55 @@ main section {
     padding: 20px;  
 }
 
-.acessibilidade{
-    display: flex;
-    padding: 20px;
-    align-items: right;
+header{
+    background-color: #1e1e1e;
+    color: #4d3a8a
+
 }
 
-header{
-background-color: #212021;
-/* background: linear-gradient(88deg,rgba(33, 32, 33, 1) 0%, rgba(77, 58, 138, 1) 83%); */
+.acessibilidade{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+i{
+    font-size: 20px;
+}
+
+.linguas{
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #4d3a8a;
+    color: #1e1e1e;
+    border-radius: 45px;
+    border-color: #1e1e1e;
+    font-family: 'Poppins_Regular';
+    font-size: 15px;
+}
+
+.linguas:hover {
+    background-color: #8c7bdc;
+    color: #4d3a8a;
+    transform: scale(1.05); /* efeito de leve aumento */
+}
+
+hr {
+  border: none;               /* Remove a borda padrão */
+  height: 3px;                /* Espessura da linha */
+  background-color: #4d3a8a;  /* Cor da linha */             /* Espaçamento (opcional) */
+}
+
 
 .sessao_um{
-    background-color: #212021;
+    background-color: #1e1e1e;
+    color: #4d3a8a;
 }
 
-.sessao_dois{
-    background-color: #4d3a8a;
-}
-
-.mulher_celular_1{
-    height: 650px;
-    width: auto;
-}
-
-.logo{
-    height: 90px;
-    width: auto;
-}
-
-.Logo_Slogan {
-    background-color:  #d9d6f0; /* branco translúcido */
-    padding: 10px 20px;
-    border-radius: 12px;
-    display: inline-flex;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.Logo_Slogan img {
-    height: 60px;
-    margin-right: 10px;
-}
