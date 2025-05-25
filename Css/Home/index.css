@@ -8,6 +8,11 @@
   src: url('../../Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Poppins_SemiBold';
+  src: url('../../Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -15,22 +20,12 @@ body, html {
     font-family: 'Poppins_Light';
 }
 
-img {
-    width: 200px;
-    height: auto;
-}
-
-main section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;  
-}
+/* HEADER------------------------------------------------------------------------------------- */
 
 header{
     background-color: #1e1e1e;
     color: #4d3a8a
+    
 
 }
 
@@ -65,18 +60,65 @@ i{
 .linguas:hover {
     background-color: #8c7bdc;
     color: #4d3a8a;
-    transform: scale(1.05); /* efeito de leve aumento */
+    transform: scale(1.05);
 }
 
 hr {
-  border: none;               /* Remove a borda padrão */
-  height: 3px;                /* Espessura da linha */
-  background-color: #4d3a8a;  /* Cor da linha */             /* Espaçamento (opcional) */
+  border: none;             
+  height: 3px;               
+  background-color: #4d3a8a; 
 }
 
+.subheader{
+    padding: 20px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-.sessao_um{
+.subheader img{
+    width: 80px;
+    height: auto;
+}
+
+/* MAIN-------------------------------------------------------------------------------------------- */
+
+.sessao_um {
     background-color: #1e1e1e;
     color: #4d3a8a;
+    display: flex;
+    height: 70vh;
+    align-items: center; /* <- Isso aqui centraliza verticalmente */
+    overflow: hidden;
+    padding: 0 0px 0 110px;
 }
+
+.mulher_celular_1{
+    width: 30%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.Logo_Slogan {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.logotipo{
+    width: 500px;
+    height:auto;
+}
+
+.slogan{
+    font-size: 50px;
+    font-family: 'Poppins_SemiBold';
+
+}
+
+
+
 
