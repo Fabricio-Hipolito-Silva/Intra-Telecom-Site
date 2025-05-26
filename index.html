@@ -5,30 +5,30 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="Css/Home/index.css">
         <link rel="icon" type="image/x-icon" href="Imgs/favicon.ico">
-        <title>Intra - Site Oficial</title>
+        <title data-i18n="titulo">Intra - Site Oficial</title>
     </head>
     <body>
         <header>
 
             <div class="acessibilidade">
-            <select class="linguas" name="linguas">
+            <select id="linguas" class="linguas" name="linguas">
                 <option value="pt-BR" selected>pt-BR</option>
                 <option value="en-US">en-US</option>   
                 <option value="es-ES">es-ES</option>
             </select>
          
             <button><i class="fa-solid fa-circle-half-stroke"></i></button>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <button><i class="fa-solid fa-minus"></i></button>
+            <button id="aumentar_tmh" ><i class="fa-solid fa-plus"></i></button>
+            <button id="diminuir_tmh" ><i class="fa-solid fa-minus"></i></button>
             </div>
             <hr>
 
             <div class="subheader">
             <a href=""><img class="logo" src="Imgs/Logo_Intra_v2_semfundo.png" alt="Logo_Intra"></a> 
-            <a href="">Planos e Serviços</a>
-            <a href="">Área do Cliente</a>
-            <a href="">Lojas</a>
-            <a href="">Suporte e Ajuda</a>
+            <a href="" data-i18n="a_planos">Planos e Serviços</a>
+            <a href="" data-i18n="a_cliente">Área do Cliente</a>
+            <a href="" data-i18n="a_lojas">Lojas</a>
+            <a href="" data-i18n="a_suporte">Suporte e Ajuda</a>
             </div>
 
 
@@ -39,7 +39,7 @@
         <img class="mulher_celular_1" src="Imgs/Mulher_Usando_Celular_2.png">
         <div class="Logo_Slogan">
             <img class="logotipo" src="Imgs/Logotipo_Intra_v2_semfundo.png">
-             <span class="slogan" >Inovação para conectar o futuro.</span>
+             <span class="slogan" data-i18n="slogan">Inovação para conectar o futuro.</span>
         </div>
                      
 
@@ -48,8 +48,19 @@
         <section class="sessao_dois"></section>
 
         <section class="sessao_tres"></section>
-
+        <script src="Js/alterar_lingua.js"></script>
+        <script src="Js/alterar_tmh_fonte.js"></script>
         
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
         </main>
             
         <footer></footer>
